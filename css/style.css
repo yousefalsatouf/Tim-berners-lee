@@ -44,7 +44,7 @@ body {
 }
 
 .container .section-1 article div:nth-child(2) h2 {
-    color: red;
+    color: #C42147;
     font-size: 40px;
     width: 100%;
     text-align: center;
@@ -52,7 +52,7 @@ body {
 }
 
 .container .section-1 article div:nth-child(2) .btn {
-    background-color: red;
+    background-color: #C42147;
     width: 30%;
     text-align: center;
     font-weight: bold;
@@ -63,10 +63,32 @@ body {
 
 .container .section-1 article div:nth-child(2) .btn:hover {
     background-color: #fff;
-    width: 40%;
+    width: 30%;
     text-align: center;
     font-weight: bold;
     color: #f00;
+    cursor: pointer;
     border: 1px solid #f00;
     transition: all 1s
+}
+
+.container .section-2 article {
+    max-width: 60%;
+    margin: auto
+}
+
+.container .section-2 article div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    opacity: 0.5;
+    font-weight: bold;
+}
+
+.container .section-2 article div .fa {
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #999;
+    width: 100%;
 }
