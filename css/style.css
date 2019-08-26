@@ -92,3 +92,31 @@ body {
     color: #999;
     width: 100%;
 }
+
+.container .section-3 article {
+    max-width: 80%;
+    margin: auto;
+    text-align: center
+}
+
+.container .section-3 article .movies {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #999;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: justify
+}
+
+.container .section-3 img {
+    max-width: 100%;
+}
+
+.container .section-3 article .movies .photo-film {
+    width: 50%;
+    margin-right: 1rem
+}
+
+h3 {
+    text-align: center
+}
