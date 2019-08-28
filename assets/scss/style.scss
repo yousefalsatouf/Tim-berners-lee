@@ -66,16 +66,16 @@ html {
                             color: $bgColorWhite;
                             border: 1px solid $bgColorWhite;
                             border-radius: 5%;
-                        }
-                        .btn:hover {
-                            background-color: $bgColorWhite;
-                            width: 30%;
-                            text-align: $textAlignCenter;
-                            font-weight: bold;
-                            color: #f00;
-                            cursor: pointer;
-                            border: 1px solid #f00;
-                            transition: all 1s
+                            &:hover {
+                                background-color: $bgColorWhite;
+                                width: 30%;
+                                text-align: $textAlignCenter;
+                                font-weight: bold;
+                                color: #f00;
+                                cursor: pointer;
+                                border: 1px solid #f00;
+                                transition: all 1s
+                            }
                         }
                     }
                 }

@@ -52,15 +52,15 @@ html {
             color: #FFF;
             border: 1px solid #FFF;
             border-radius: 5%; }
-          html body .container .section-1 article div:nth-child(2) .btn:hover {
-            background-color: #FFF;
-            width: 30%;
-            text-align: center;
-            font-weight: bold;
-            color: #f00;
-            cursor: pointer;
-            border: 1px solid #f00;
-            transition: all 1s; }
+            html body .container .section-1 article div:nth-child(2) .btn:hover {
+              background-color: #FFF;
+              width: 30%;
+              text-align: center;
+              font-weight: bold;
+              color: #f00;
+              cursor: pointer;
+              border: 1px solid #f00;
+              transition: all 1s; }
       html body .container .section-2 article {
         max-width: 60%;
         margin: auto; }
