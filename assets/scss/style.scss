@@ -1,0 +1,132 @@
+@import"_variable";
+@mixin prefixer($property, $value, $prefixers) {
+    @each $prefix in $prefixers {
+        #{'-'+$prefix+'-'+$property}: $value;
+    }
+    #{$property}: $value;
+}
+
+* {
+    @include prefixer(box-sizing, border-box, webkit moz o ms);
+}
+
+html {
+    font-size: 75%;
+    body {
+        //the body block ..
+        padding: $zeroPadding;
+        margin: $zeroMargin;
+        font-family: $fontFamily;
+        font-size: $fontSize;
+        background-color: $bgColorBody;
+        max-width: $fullWidth;
+        //the container block ...
+        .container {
+            max-width: $MaxWidthContainer;
+            margin: 4rem auto;
+            // this is for the three sections ...
+            section {
+                border: $secitonBorder;
+                background-color: #fff;
+                border-radius: 1%;
+                padding: 1rem;
+                margin: 1rem;
+            }
+            //here for the first section ...
+            .section-1 {
+                article {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    div:first-child {
+                        width: 15%;
+                        img {
+                            border: 5px solid #999;
+                            border-radius: 50%;
+                            width: 100%;
+                        }
+                    }
+                    div:nth-child(2) {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        color: $textColor;
+                        h2 {
+                            color: $titleColor;
+                            font-size: 40px;
+                            width: 100%;
+                            text-align: center;
+                            margin: 0%
+                        }
+                        .btn {
+                            background-color: #C42147;
+                            width: 30%;
+                            text-align: center;
+                            font-weight: bold;
+                            color: #fff;
+                            border: 1px solid #fff;
+                            border-radius: 5%;
+                        }
+                        .btn:hover {
+                            background-color: #fff;
+                            width: 30%;
+                            text-align: center;
+                            font-weight: bold;
+                            color: #f00;
+                            cursor: pointer;
+                            border: 1px solid #f00;
+                            transition: all 1s
+                        }
+                    }
+                }
+            }
+            //the second section ...
+            .section-2 {
+                article {
+                    max-width: 60%;
+                    margin: auto;
+                    div {
+                        display: flex;
+                        justify-content: space-around;
+                        flex-wrap: wrap;
+                        opacity: 0.5;
+                        font-weight: bold;
+                        .fa {
+                            font-size: 2rem;
+                            text-align: center;
+                            text-decoration: none;
+                            color: #999;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            //the third section ...
+            .section-3 {
+                article {
+                    max-width: 80%;
+                    margin: auto;
+                    text-align: center;
+                    .movies {
+                        display: flex;
+                        font-family: $fontFamily;
+                        color: #999;
+                        font-weight: 200;
+                        font-size: $fontSize;
+                        text-align: justify;
+                        .photo-film {
+                            width: 50%;
+                            margin-right: 1rem;
+                            img {
+                                max-width: $fullWidth;
+                            }
+                        }
+                        div:last-child h3 {
+                            text-align: $textAlignCenter;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
