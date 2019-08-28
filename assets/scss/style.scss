@@ -27,7 +27,7 @@ html {
             // this is for the three sections ...
             section {
                 border: $secitonBorder;
-                background-color: #fff;
+                background-color: $bgColorWhite;
                 border-radius: 1%;
                 padding: 1rem;
                 margin: 1rem;
@@ -41,7 +41,7 @@ html {
                     div:first-child {
                         width: 15%;
                         img {
-                            border: 5px solid #999;
+                            border: 5px solid $textColorSecondLevel;
                             border-radius: 50%;
                             width: 100%;
                         }
@@ -52,25 +52,25 @@ html {
                         justify-content: center;
                         color: $textColor;
                         h2 {
-                            color: $titleColor;
+                            color: $titleBtnColor;
                             font-size: 40px;
                             width: 100%;
                             text-align: center;
                             margin: 0%
                         }
                         .btn {
-                            background-color: #C42147;
+                            background-color: $titleBtnColor;
                             width: 30%;
-                            text-align: center;
+                            text-align: $textAlignCenter;
                             font-weight: bold;
-                            color: #fff;
-                            border: 1px solid #fff;
+                            color: $bgColorWhite;
+                            border: 1px solid $bgColorWhite;
                             border-radius: 5%;
                         }
                         .btn:hover {
-                            background-color: #fff;
+                            background-color: $bgColorWhite;
                             width: 30%;
-                            text-align: center;
+                            text-align: $textAlignCenter;
                             font-weight: bold;
                             color: #f00;
                             cursor: pointer;
@@ -93,7 +93,7 @@ html {
                         font-weight: bold;
                         .fa {
                             font-size: 2rem;
-                            text-align: center;
+                            text-align: $textAlignCenter;
                             text-decoration: none;
                             color: #999;
                             width: 100%;
@@ -104,18 +104,18 @@ html {
             //the third section ...
             .section-3 {
                 article {
-                    max-width: 80%;
+                    max-width: ($fullWidth - 20%);
                     margin: auto;
-                    text-align: center;
+                    text-align: $textAlignCenter;
                     .movies {
                         display: flex;
                         font-family: $fontFamily;
-                        color: #999;
+                        color: $textColorSecondLevel;
                         font-weight: 200;
                         font-size: $fontSize;
                         text-align: justify;
                         .photo-film {
-                            width: 50%;
+                            width: ($fullWidth - 50%);
                             margin-right: 1rem;
                             img {
                                 max-width: $fullWidth;

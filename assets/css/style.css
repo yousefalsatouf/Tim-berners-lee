@@ -15,11 +15,11 @@ html {
     background-color: #eee;
     max-width: 100%; }
     html body .container {
-      max-width: 35%;
+      max-width: 33.3333333333%;
       margin: 4rem auto; }
       html body .container section {
         border: 1px solid #eee;
-        background-color: #fff;
+        background-color: #FFF;
         border-radius: 1%;
         padding: 1rem;
         margin: 1rem; }
@@ -49,11 +49,11 @@ html {
             width: 30%;
             text-align: center;
             font-weight: bold;
-            color: #fff;
-            border: 1px solid #fff;
+            color: #FFF;
+            border: 1px solid #FFF;
             border-radius: 5%; }
           html body .container .section-1 article div:nth-child(2) .btn:hover {
-            background-color: #fff;
+            background-color: #FFF;
             width: 30%;
             text-align: center;
             font-weight: bold;

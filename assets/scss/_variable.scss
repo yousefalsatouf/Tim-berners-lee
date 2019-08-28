@@ -1,18 +1,18 @@
 //all background color here ...
-$bgColorContainer: #FFF;
+$bgColorWhite: #FFF;
 $bgColorBody: #eee;
 //all about text is here ...
-$titleColor: #C42147;
 $textColor: gray;
 $textAlignCenter: center;
 $titleBtnColor: #C42147;
+$textColorSecondLevel: #999;
 //all about fonts here
 $fontSize: 15px;
 $fontFamily: Arial,
 Helvetica,
 sans-serif;
 //all about width here 
-$MaxWidthContainer: 35%;
+$MaxWidthContainer: (100/3)*1%;
 $fullWidth: 100%;
 //all about padding here 
 $zeroPadding: 0px;
